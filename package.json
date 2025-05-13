@@ -45,7 +45,6 @@
   ],
   "dependencies": {
     "avif-webp-checker": "^1.0.0",
-    "fullpage.js": "^4.0.35",
-    "gh-pages": "^6.3.0"
+    "fullpage.js": "^4.0.35"
   }
 }

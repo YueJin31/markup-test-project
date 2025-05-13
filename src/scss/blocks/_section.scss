@@ -163,6 +163,10 @@
         textarea {
           min-height: rem(76);
           padding: rem(9) rem(17);
+
+          &:focus {
+            outline: none;
+          }
         }
 
         .half-width {
@@ -225,9 +229,6 @@
 
         .template-large-dropdown {
           position: relative;
-          border: rem(3) solid var(--white);
-          height: rem(48);
-          border-radius: rem(15);
           width: 100%;
           cursor: pointer;
 
@@ -243,6 +244,9 @@
           }
 
           .selected-display {
+            border: rem(3) solid var(--white);
+            height: rem(48);
+            border-radius: rem(15);
             padding: rem(15) rem(22);
             display: flex;
             justify-content: space-between;
@@ -270,15 +274,15 @@
             display: flex;
             flex-direction: column;
             gap: rem(15);
-            top: 100%;
-            left: rem(-3);
+            top: 95%;
+            left: 0;
             visibility: hidden;
             opacity: 0;
             z-index: 1;
-            transition: 0.3s;
+            transition: opacity 0.3s;
             margin: 0;
             background: var(--white);
-            width: calc(100% + #{rem(6)});
+            width: 100%;
             padding: rem(16) rem(20) rem(20);
             border-bottom-left-radius: rem(15);
             border-bottom-right-radius: rem(15);

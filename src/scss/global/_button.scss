@@ -2,7 +2,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  transition: color 0.3s, background 0.3s, border-color 0.3s;
+  transition: color 0.3s, background 0.3;
   cursor: pointer;
   border: rem(2) solid var(--white);
   border-radius: rem(20) rem(20) rem(20) 0;
