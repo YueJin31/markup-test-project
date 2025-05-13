@@ -1,0 +1,61 @@
+.offcanvas {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  background: var(--red);
+  border-radius: 0 0 0 100%;
+  transform-origin: top right;
+  transform: scale(0);
+  transition: all 0.5s;
+  z-index: 101;
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+
+    @include media-mx(1023) {
+      width: 100vw;
+      height: 100vh;
+      left: unset;
+      right: 0;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      padding: rem(110) rem(24) rem(24);
+    }
+  }
+
+  &__navigation {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: rem(40);
+      align-items: center;
+
+      a {
+        font-size: rem(32);
+        font-family: var(--alt-font-family);
+      }
+    }
+  }
+
+  &.show {
+    width: 250vw;
+    height: 250vw;
+    transform: scale(1);
+
+    @include media-mn(1023) {
+      width: 60%;
+      height: 100%;
+    }
+
+    .offcanvas__inner {
+      opacity: 1;
+    }
+  }
+}

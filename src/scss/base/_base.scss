@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css2?family=Risque&family=Roboto:ital,wght@0,100..900;1,100..900&display=swapF);
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--blue);
+  color: var(--white);
+  font-family: var(--font-main);
+  text-wrap: balance;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: var(--white);
+}
+

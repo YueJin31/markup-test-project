@@ -1,0 +1,32 @@
+.snowflake {
+  position: fixed;
+  z-index: 100;
+  left: rem(-210);
+  transition: height 0.7s;
+  bottom: rem(-35);
+  width: rem(500);
+  height: rem(500);
+  pointer-events: none;
+
+  @include media-mx(1023) {
+    display: none;
+  }
+
+  img {
+    animation: spin 120s linear infinite;
+    object-fit: contain;
+    width: rem(500);
+    height: rem(500);
+    position: absolute;
+  }
+
+  &.to-top {
+    height: calc(100% + #{rem(170)});
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

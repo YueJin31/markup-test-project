@@ -1,0 +1,25 @@
+@use "sass:math" as math;
+
+@function round-to-decimal($number, $decimal: 2) {
+  $multiplier: pow(10, $decimal);
+
+  @return math.div(math.round($number * $multiplier), $multiplier);
+}
+
+@function prc($px-one, $px-two) {
+  $result: math.div($px-one, $px-two) * 100%;
+
+  @return round-to-decimal($result);
+}
+
+@function rem($px) {
+  $result: math.div($px, 16) + rem;
+
+  @return $result;
+}
+
+@function em($px) {
+  $result: math.div($px, 16) + em;
+
+  @return $result;
+}

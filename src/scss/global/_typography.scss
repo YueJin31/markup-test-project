@@ -1,0 +1,30 @@
+h1 {
+  font-size: rem(52);
+
+  @include media-mn(1280) {
+    font-size: rem(72);
+  }
+}
+
+h2 {
+  font-size: rem(52);
+
+  @include media-mn(1280) {
+    font-size: rem(56);
+  }
+}
+
+h3 {
+  font-size: rem(28);
+
+  @include media-mn(1280) {
+    font-size: rem(38);
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--alt-font-family);
+  font-weight: 400;
+}
