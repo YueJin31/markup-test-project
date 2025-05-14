@@ -30,6 +30,8 @@ export const InitStars = () => {
 
     svgElement.classList.add(`star${groupNumber}`);
 
-    document.body.appendChild(svgElement);
+    const container = document.querySelector(".stars-overlay");
+
+    if (container) container.appendChild(svgElement);
   }
 };
