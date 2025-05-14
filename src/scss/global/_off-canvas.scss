@@ -21,12 +21,14 @@
 
     @include media-mx(1023) {
       width: 100vw;
-      height: 100vh;
+      height: calc(100vh - #{rem(130)});
       left: unset;
       right: 0;
+      top: rem(130);
       opacity: 0;
       transition: opacity 0.5s ease;
-      padding: rem(110) rem(24) rem(24);
+      padding: rem(24);
+      overflow-y: auto;
     }
   }
 
