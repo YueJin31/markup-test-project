@@ -1,12 +1,12 @@
 const OFFCANVAS_BUTTON = ".hamburger";
-const OFFCANVAS_CLASS = ".offcanvas";
+const OFFCANVAS_SELECTOR = ".offcanvas";
 
 const SHOW_CLASS = "show";
 const ACTIVE_CLASS = "is-active";
 
 export const Offcanvas = () => {
   const menuToggle = document.querySelector(OFFCANVAS_BUTTON);
-  const offcanvas = document.querySelector(OFFCANVAS_CLASS);
+  const offcanvas = document.querySelector(OFFCANVAS_SELECTOR);
 
   if (!menuToggle || !offcanvas) return;
 

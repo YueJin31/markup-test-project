@@ -2,7 +2,6 @@ import { InitFullPage } from "./global/fullPage";
 import { Offcanvas } from "./global/offcanvas";
 import { InitTabs } from "./blocks/tabs";
 import { InitSnow } from "./global/snow";
-import { InitStars } from "./global/stars";
 import { CustomSelect } from "./global/customSelect";
 
 // Offcanvas
@@ -13,9 +12,6 @@ InitFullPage();
 
 // Snow
 InitSnow();
-
-// Stars
-InitStars();
 
 // Custom Select
 CustomSelect();

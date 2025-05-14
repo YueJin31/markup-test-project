@@ -1,4 +1,3 @@
-// Snowflake settings
 const SNOWFLAKE_COUNT = 70;
 const SNOW_COLORS = ["#aaaacc", "#ddddFF", "#ccccDD"];
 const SNOW_FONTS = ["Arial Black", "Arial Narrow", "Times", "Comic Sans MS"];
@@ -39,6 +38,7 @@ export const InitSnow = () => {
     snowflake.style.fontSize = `${getRandom(sizeRange) + SNOW_SIZE_MIN}px`;
     snowflake.style.color = SNOW_COLORS[getRandom(SNOW_COLORS.length)];
     snowflake.textContent = SNOW_CHAR;
+    snowflake.style.pointerEvents = "none";
 
     document.body.appendChild(snowflake);
 
@@ -81,7 +81,6 @@ function moveSnow() {
     flake.style.left = `${flake.posx + leftRight[i] * Math.sin(coords[i])}px`;
     flake.style.top = `${flake.posy}px`;
 
-    // Reset flake if it goes beyond bottom or right
     if (flake.posy >= pageHeight - 2 * size || parseInt(flake.style.left) > pageWidth - 3 * leftRight[i]) {
       switch (SNOW_AREA) {
         case 2:

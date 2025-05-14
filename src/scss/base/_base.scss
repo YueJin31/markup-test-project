@@ -9,6 +9,7 @@ body {
   color: var(--white);
   font-family: var(--font-main);
   text-wrap: balance;
+  overflow-x: hidden;
 }
 
 img {
