@@ -1,8 +1,8 @@
 const DROPDOWN_SELECTOR = ".template-large-dropdown";
+const SELECTED_SELECTOR = ".selected-display";
 const DROPDOWN_LIST = ".dropdown";
 const DROPDOWN_ITEM = ".dropdown__item";
 
-const SELECTED_CLASS = ".selected-display";
 const ACTIVE_CLASS = "is-active";
 
 export const CustomSelect = () => {
@@ -12,7 +12,7 @@ export const CustomSelect = () => {
 };
 
 function initDropdown(dropdownWrapper) {
-  const selectedDisplay = dropdownWrapper.querySelector(SELECTED_CLASS);
+  const selectedDisplay = dropdownWrapper.querySelector(SELECTED_SELECTOR);
   const dropdownList = dropdownWrapper.querySelector(DROPDOWN_LIST);
   const items = dropdownList?.querySelectorAll(DROPDOWN_ITEM);
 

@@ -16,5 +16,5 @@ InitSnow();
 // Custom Select
 CustomSelect();
 
-// Blocks
+// Tabs
 InitTabs();
